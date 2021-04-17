@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 app.use(express.json())
 
+//salli kaikista origineista tulevat pyynnöt backendin express routeihin
 const cors = require('cors')
 
 app.use(cors())
