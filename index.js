@@ -2,6 +2,8 @@ const express = require('express');
 
 const app = express();
 app.use(express.json())
+//näytä staattista sisältlöä, esim. index.html
+app.use(express.static('build'))
 
 //salli kaikista origineista tulevat pyynnöt backendin express routeihin
 const cors = require('cors')
